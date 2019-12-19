@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  h2.page-header 註冊
+  p 請填寫下列表單註冊帳號
+  if errors
+    each error, i in errors
+      div.alert.alert-danger #{error.msg}
+  form(method='POST', action='/users/register')
+    .form-group
+      label 姓名
+      input.form-control(name='name', type='text', placeholder='輸入姓名')
+    .form-group
+      label 出生日期
+      input.form-control(name='dateofbirth', type='date')
+    .form-group
+      label 國家
+      input.form-control(name='country', type='text', placeholder='輸入國家')
+    .form-group
+      label 信箱
+      input.form-control(name='email', type='email', placeholder='輸入信箱')
+    .form-group
+      label 使用者名稱
+      input.form-control(name='username', type='text', placeholder='輸入使用者名稱')
+    .form-group
+      label 密碼
+      input.form-control(name='password', type='password', placeholder='輸入密碼')
+    .form-group
+      label 密碼確認
+      input.form-control(name='password2', type='password', placeholder='輸入確認密碼')
+    input.btn.btn-primary(type ='submit', name = 'submit', value='提交')
