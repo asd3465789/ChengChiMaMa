@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>程麒媽媽廚房</title>
+
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/mystyle.css" rel="stylesheet">
+	<link href="assets/css/ForPhone.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" />
+</head>
+
+<body>
+	<div class="navbar navbar-default navbar-fixed-top top-title settop">
+		<div class="container navbar-weith">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+				<div class="title-text-letter">
+					<a class="title-text dftt" href="index.html">首頁</a>
+					<a class="title-text dftt" href="aboutUs.html">關於我們</a>
+					<a class="title-text dftt" href="recipe.html">美味食譜</a>
+				</div>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active dftt"><a href="Register.html">註冊</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<h2 class="page-header" style="padding-left: 20px;">登入</h2>
+        <form method="POST" action="users/login" style="padding-bottom: 350px;" class="post-style">
+             <div class="form-group"><label>使用者名稱</label><input class="form-control" name="username" type="text" placeholder="輸入使用者名稱" /></div>
+			 <div class="form-group"><label>密碼</label><input class="form-control" name="password" type="password" placeholder="輸入密碼" /></div>
+			 <input class="btn btn-primary" type="submit" name="submit" value="登入" style="margin-top: 20px;"/>
+        </form>
+	</div>
+
+
+	<div class="about-foot dftt">
+		©2019 by Cheng Chi mama Kitchen
+	</div>
+	
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/chart.js"></script>
+</body>
+
+</html>

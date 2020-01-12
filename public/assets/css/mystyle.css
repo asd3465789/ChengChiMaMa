@@ -3,7 +3,6 @@
     background-color: rgba(255, 255, 255, 0);
     border: none;
 }
-
 .Main-ground{
     background-color: #f6e27f;
     position: absolute;
@@ -14,12 +13,25 @@
     margin: auto;
     z-index: -1;
 }
-
 .center {
     width: 100%;
     padding-top: 300px;
     padding-bottom: 300px;
 }
+.title-text{
+    border-top: 3px solid #FF9B00;
+    padding: 10px 6px 0 6px;
+    font-size: 14pt;
+    font-style: dftt;
+}
+.title-text-letter{
+    margin-left: 60px;
+    color: #FF9B00;
+    position: absolute;
+    bottom: 15px;
+}
+
+/*首頁大圖-開始*/
 .box {
     position: relative;
     width: 100%;
@@ -35,6 +47,7 @@
     right: 0;
     left: 0;
     margin: auto;
+    padding-top: 80px;
 }
 .box_text {
     font-size: 100px;
@@ -48,18 +61,314 @@
     right: 0;
     left: 0;
     margin: auto;
+    margin-bottom: 50px;
 }
 #More{
     background-color: #f6e27f;
     text-align: center;
-	padding-top: 50px;
-	margin-bottom: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+    color: white;
 }
 .nopadding{
     text-align: center;
     padding: 0px;
 }
 .setfontstyle{
-    font-family: 王漢宗綜藝體繁;
+    font-family: myfont;
+}
+.sethisweith{
+    padding: 0;
+}
+.navbar-weith{
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.putright{
+    text-align: right;
+}
+
+.L_text{
+    margin-left: 0;
+}
+.R_text{
+    margin-right: 0;
+}
+.font-set-color{
+    color: rgba(255, 100, 0, 1);
+}
+/*首頁大圖-結束*/
+/*關於我們-開始*/
+.about-top{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/bg_image.jpg');
+}
+.about-top-red{
+    background-image: url('../img/bg_image_red.jpg');
+}
+.about-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+.about-text{
+    z-index: +1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: white;
+    margin: auto;
+}
+.about-about-text{
+    font-size: 30pt;
+}
+.about-mama-text{
+    font-size: 48pt;
+}
+/*關於我們-結束*/
+/*箭頭-開始*/
+.arrow-box{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 130px;
+    align-items: center;
+}
+.down-arrow{
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+/*箭頭-結束*/
+/*詳細-開始*/
+.about-detail{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.about-detail-text{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #ffa832;
+}
+.about-detail-title{
+    font-family: NicoMoJI;
+    font-size: 30pt;
+}
+.about-detail-english{
+    font-family: Palace Script MT;
+    font-size: 30pt;
+}
+.about-detail-content-title{
+    font-size: 20pt;
+}
+.about-detail-content{
+    font-size: 18pt;
+}
+.about-detail-adress{
+    font-size: 12pt;
+}
+/*詳細-結束*/
+/*插圖-開始*/
+.middle-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    padding-top: 312px;
+    padding-bottom: 313px;
+    align-items: center;
+}
+.middle-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+/*插圖-結束*/
+/*頁腳-開始*/
+.about-foot{
+    text-align: center;
+    padding-top: 20px;
+	padding-bottom: 20px;
+    background-color: #ffa832;
+    font-size: 12pt;
+    color: white;
+}
+/*頁腳-結束*/
+/*食譜-開始*/
+.recipe-box{
+    text-align: center;
+    color: #f65d50;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-right: 150px;
+    padding-left:150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.recipe-text{
+    margin-top: 20px;
+    font-family: dftt;
+    font-size: 30pt;
+}
+.recipe-middle{
+    margin-bottom: 10px;
+}
+.arrow-left{
+    transform: rotate(90deg);
+    padding-top: 70px;
+}
+.arrow-right{
+    transform: rotate(270deg);
+    padding-top: 70px;
+}
+/*食譜-結束*/
+/*搜尋-開始*/
+.search-box{
+    text-align: center;
+    color: #f65d50;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.search-text{
+    font-family: dftt;
+    font-size: 30pt;
+}
+.search-box-box{
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.container-1 input#search{
+    width: 300px;
+    height: 50px;
+    background: #ffffff;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #f65d50;
+    padding-left: 20px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    border:2px #f65d50 solid
+    
+  }
+  .container-1 input#search::-webkit-input-placeholder {
+    color: #f65d50;
+ }
+  
+ .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+    color: #f65d50;  
+ }
+  
+ .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: #f65d50;  
+ }
+  
+ .container-1 input#search:-ms-input-placeholder {  
+    color: #f65d50;  
+ }
+ .container-1 .icon{
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #f65d50;
+  }
+/*搜尋-結束*/
+/*食譜-開始*/
+.food-box{
+    text-align: center;
+    color: #f65d50;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.food-text{
+    font-size: 30px;
+    font-weight: 100;
+    color: black;
+    z-index: +1;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    padding-top: 50px;
+}
+.food-img{
+    position: relative;
+    width: 50%;
+    margin:auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+/*食譜-結束*/
+.post-style{
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 50%;
+    align-items: center;
+}
+/*字型*/
+.dftt{
+    font-family: dftt;
+}
+.dffn{
+    font-family: dffn;
+}
+.Corporate{
+    font-family: Corporate;
+}
+.NicoMoJI{
+    font-family: NicoMoJI;
+}   
+.framd{
+    font-family: framd;
+}
+.Palace{
+    font-family: Palace;
 }
 

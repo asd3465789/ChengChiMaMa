@@ -1,6 +1,7 @@
 extends ../node_modules/jade-bootstrap/_bootstrap
 append styles
   link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel='stylesheet', href='/assets/css/bootstrap.css')
 block body
   nav.navbar.navbar-default
     .container
@@ -11,22 +12,27 @@ block body
           span.icon-bar
           span.icon-bar
         a.navbar-brand(href='/') 程麒媽媽廚房
+        
       #navbar.navbar-collapse.collapse
         ul.nav.navbar-nav
           li(class=(title == 'Home' ? 'active' : ''))
             a(href='/') 首頁
+
           if user
             li(class=(title == 'Members' ? 'active' : ''))
               a(href='/') 會員
+
           if !user
             li(class=(title == 'Register' ? 'active' : ''))
               a(href='/users/register') 註冊
             li(class=(title == 'Login' ? 'active' : ''))
               a(href='/users/login') 登入
+
         ul.nav.navbar-nav.navbar-right
           if user
             li
               a(href='users/logout') 登出
+
   .container
     != messages()
     block content

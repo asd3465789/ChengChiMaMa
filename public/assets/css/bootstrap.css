@@ -2329,8 +2329,8 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #FF9B00;
+  border-color: #FF9B00;
 }
 
 .btn-primary:hover,
@@ -2631,12 +2631,40 @@ input[type="button"].btn-block {
   -webkit-transition: height 0.35s ease;
           transition: height 0.35s ease;
 }
-
+@font-face {
+  font-family: 'dftt';
+  src: url('../fonts/dftt_r5.ttf');
+}
+@font-face {
+  font-family: 'myfont';
+  src: url('../fonts/myfontstyle.ttf');
+}
+@font-face {
+  font-family: 'dffn';
+  src: url('../fonts/dffn.ttf');
+}
+@font-face {
+  font-family: 'NicoMoJI';
+  src: url('../fonts/nicomoji-plus_1.11.ttf');
+}
+@font-face {
+  font-family: 'Palace';
+  src: url('../fonts/PALSCRI.TTF');
+}
+@font-face {
+  font-family: 'Corporate';
+  src: url('../fonts/logotypejp.ttf');
+}
+@font-face {
+  font-family: 'framd';
+  src: url('../fonts/framd.ttf');
+}
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
 
 .glyphicon {
   position: relative;
@@ -4411,7 +4439,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar-collapse {
-    width: auto;
+    width: 100%;
     border-top: 0;
     box-shadow: none;
   }
@@ -4446,6 +4474,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .container > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
+    align-items: flex-end;
   }
 }
 

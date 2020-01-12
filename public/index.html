@@ -10,26 +10,20 @@
 
 	<title>程麒媽媽廚房</title>
 
-	<!-- Bootstrap core CSS -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
 
-	<!-- Custom styles for this template -->
 	<link href="assets/css/main.css" rel="stylesheet">
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="assets/js/chart.js"></script>
-
-	<!-- 我的CSS -->
-	<link href="assets/fonts/myfontstyle.TTF" rel="stylesheet">
 	<link href="assets/css/mystyle.css" rel="stylesheet">
 	<link href="assets/css/ForPhone.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 640px)" />
 </head>
 
 <body>
-	<!-- Fixed navbar -->
 	<div class="navbar navbar-default navbar-fixed-top top-title settop">
-		<div class="container">
+		<div class="container navbar-weith">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
@@ -37,27 +31,38 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+				<div class="title-text-letter">
+					<a class="title-text dftt" href="index.html">首頁</a>
+					<a class="title-text dftt" href="aboutUs.html">關於我們</a>
+					<a class="title-text dftt" href="recipe.html">美味食譜</a>
+				</div>
 			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href='/users/login'>登入</a></li>
+			
+			<if  condition= "user">
+				<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">					
+					<li class="active dftt"><a href="Login.html">登入</a></li>					
+					<li class="active dftt"><a href="Register.html">註冊</a></li>
 				</ul>
-			</div>
+				</div>
+			</if>
+			
 		</div>
 	</div>
 
 	<div class="center">
-		<div class="box">
-			<div class="box_text setfontstyle">ChengChiMaMa</div>
+		<div class="row box">
 			<img class="main_img" src="assets/img/MainPicture.png" alt="">
+			<di v class="col-md-5 L_text box_text setfontstyle">ChengChi</di v>
+			<div class="col-md-7 R_text box_text setfontstyle">MaMa</div>
 		</div>
 	</div>
 
 	<div id="More">
-		<div class="container">
-			<h3>WHAT WE DO?</h3>
+		<div class="container putright dftt">
+			<h3 class="font-set-color">WHAT WE DO?</h3>
 			<p>很多人遠離家鄉外宿在異鄉，吃飯也都是外食<br>
-				但總希望能吃到家鄉味<br>
+				但人們總是希望能夠吃到家鄉味<br>
 				程麒媽媽廚房這個網站就是為了其所打造<br>
 				網站有各種簡單料理食譜，只需要電鍋或微波爐<br>
 				不用回家也能品嘗媽媽的味道
@@ -66,20 +71,20 @@
 	</div>
 
 	<div class="container">
-		<div class="row centered mt grid setfontstyle">
-			<h3>選個方法開始烹飪吧！</h3>
+		<div class="row centered mt setfontstyle">
+			<h3 class="dftt" style="color: #FF9B00;">選個方法開始烹飪吧！</h3>
 			<div class="col-md-6 mt">
 				<img src="assets/img/nope.png" alt="">
 			</div>
 			<div class="col-md-6 mt">
-				<div class="mt">
-					<a href="#"><img src="assets/img/01.png" alt=""></a>
+				<div class="mt grid">
+					<a href="food_recipe2.html"><img src="assets/img/01.png" alt=""></a>
 				</div>
-				<div class="mt">
-					<a href="#"><img src="assets/img/02.png" alt=""></a>
+				<div class="mt grid">
+					<a href="food_recipe.html"><img src="assets/img/02.png" alt=""></a>
 				</div>
-				<div class="mt">
-					<a href="#"><img src="assets/img/03.png" alt=""></a>
+				<div class="mt grid">
+					<a href="food_recipe3.html"><img src="assets/img/03.png" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -87,31 +92,19 @@
 
 	</div>
 
-	<section id="contact"></section>
-	<div id="social">
-
+	<div class="about-foot dftt">
+		©2019 by Cheng Chi mama Kitchen
 	</div>
-
+	<!--
 	<div id="f">
 		<div class="container nopadding">
-			<div class="row ">
-				<div class="col-md-3 col-xs-3">
-					<a href="#"><img src="assets/img/google.png" alt=""></a>
-				</div>
-				<div class="col-md-3 col-xs-3">
-					<a href="#"><img src="assets/img/facebook.png" alt=""></a>
-				</div>
-				<div class="col-md-3 col-xs-3">
-					<a href="#"><img src="assets/img/instagram.png" alt=""></a>
-				</div>
-				<div class="col-md-3 col-xs-3">
-					<a href="#"><img src="assets/img/line.png" alt=""></a>
-				</div>
-				<p>Crafted by 偉勝愛喝香蕉舒服蕾水</p>
-			</div>
+			<a href="#"><img src="assets/img/twitter.png" alt=""></a>
+			<a href="#"><img src="assets/img/facebook.png" alt=""></a>
+			<a href="#"><img src="assets/img/instagram.png" alt=""></a>
+			<p>Crafted by 偉勝愛喝香蕉舒服蕾水</p>
 		</div>
 	</div>
-
+	-->
 	<script src="assets/js/bootstrap.js"></script>
 </body>
 

@@ -15,7 +15,7 @@
 
 body {
   background-color: #f2f2f2;
-    font-family: "Lato";
+  font-family: "王漢宗綜藝體繁";
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -23,12 +23,12 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     
-    margin-top: 70px;
+	margin-top: 70px;
+	padding-top: 40px;
 }
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "王漢宗綜藝體繁";
     font-weight: 600;
     color: #333;
 }
@@ -37,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
-    margin-bottom: 25px;
 }
 
 .centered {
@@ -46,11 +45,12 @@ p {
 
 .mt {
 	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 /* Links */
 a {
-    color: #f85c37;
+    color: #FF9B00;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -90,7 +90,7 @@ a:after {
 .navbar {
 	font-weight: 800;
 	font-size: 14px;
-	padding-top: 15px;
+	padding-top: 10px;
 	padding-bottom: 15px;
 	background-color: #ffffff;
 }
@@ -98,6 +98,7 @@ a:after {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #ffffff;
 	background-color: #ff9e44;
+	margin-right: 30px;
 }
 
 .navbar-brand {
@@ -108,7 +109,7 @@ a:after {
 
 .btn-theme {
 	color: #ffffff;
-	background-color: #74cfae;
+	background-color: #FF9B00;
 	border-color: transparent;
 }
 
@@ -204,7 +205,7 @@ a:after {
 /* Footer */
 #f {
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	background-color: #f6e27f;
 }
 

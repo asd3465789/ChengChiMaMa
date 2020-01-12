@@ -25,7 +25,7 @@ router.get('/home', function(req, res, next) {
 
 ///申請帳號
 router.post('/register', function(req, res, next) {
-
+console.log("申請帳號");
   ///取得申請帳號資料
   var name = req.body.name;
   var dateofbirth = req.body.dateofbirth;
@@ -70,9 +70,7 @@ router.post('/register', function(req, res, next) {
     });
 
     req.flash('success', 'You have completed your registration');
-
-    res.location('/users/login');
-    res.redirect('/users/login');
+    res.redirect('/Login.html');
   }
 });
 ///--------

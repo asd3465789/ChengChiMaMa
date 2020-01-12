@@ -10,7 +10,7 @@ function ensureAuthenticated(req, res, next){
   if(req.isAuthenticated()){
     return next();
   }
-  res.redirect('/users/login');
+  res.redirect('Login.html');
 }
 
 module.exports = router;
