@@ -24,6 +24,6 @@
     "passport": "*",
     "passport-http": "*",
     "passport-local": "*",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   }
 }
